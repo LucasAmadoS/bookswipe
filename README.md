@@ -283,9 +283,13 @@ Endereço base: `http://localhost:7070/api`. As respostas são em JSON, e os err
 
 ## Telas
 
-| Landing page | Descobrir (swipe) |
+| Landing page | Login |
 |---|---|
-| ![](entrega/img/01-landing.png) | ![](entrega/img/06-descobrir.png) |
+| ![](entrega/img/01-landing.png) | ![](entrega/img/02-login.png) |
+
+| Cadastro | Descobrir (swipe) |
+|---|---|
+| ![](entrega/img/03-cadastro-dados.png) | ![](entrega/img/06-descobrir.png) |
 
 | Matches | Trocas |
 |---|---|
