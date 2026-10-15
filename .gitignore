@@ -1,0 +1,6 @@
+# arquivos gerados pelo Maven
+backend/target/
+
+# senha do banco - não subir para o GitHub
+backend/src/main/resources/db.properties
+backend/src/main/resources/apis.properties

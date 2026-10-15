@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar · BookSwipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="tela-dividida">
+    <div class="lado-form">
+      <form class="form-login" id="form-login">
+        <a href="index.html" class="logo" id="logo"></a>
+        <h1>Bem-vindo de volta</h1>
+        <p class="suave">Continue sua próxima leitura.</p>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com" required autocomplete="email">
+        </div>
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="••••••" required autocomplete="current-password">
+        </div>
+
+        <div class="erro-form" id="erro"></div>
+        <button class="botao botao-largo" type="submit">Entrar</button>
+
+        <p class="suave pequeno" style="margin-top:22px;text-align:center">
+          Ainda não possui conta? <a href="cadastro.html" style="color:var(--verde-escuro);font-weight:600">Cadastre-se</a>
+        </p>
+        <p class="suave pequeno" style="margin-top:8px;text-align:center">Teste: lucas@bookswipe.com / 123456</p>
+      </form>
+    </div>
+
+    <div class="lado-arte">
+      <div class="estante-arte" id="estante-arte"></div>
+      <blockquote>“Livros circulam, ideias também.”</blockquote>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

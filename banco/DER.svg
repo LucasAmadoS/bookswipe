@@ -1,0 +1,355 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2300" height="1360" viewBox="0 0 2300 1360">
+<defs>
+  <filter id="sombra" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1e293b" flood-opacity="0.12"/>
+  </filter>
+  <style>
+    text { font-family: "Segoe UI", Arial, sans-serif; }
+    .t1 { font-size: 36px; font-weight: 700; fill: #0f172a; }
+    .t2 { font-size: 18px; fill: #475569; }
+    .th { font-size: 18px; font-weight: 700; fill: #ffffff; }
+    .col { font-size: 15px; fill: #1e293b; }
+    .ty { font-size: 12.5px; fill: #64748b; font-family: Consolas, monospace; }
+    .bd { font-size: 10.5px; font-weight: 700; }
+    .lb { font-size: 13px; fill: #334155; font-style: italic; }
+    .lg { font-size: 15px; fill: #334155; }
+    .ln { stroke: #475569; stroke-width: 2; }
+  </style>
+</defs>
+<rect width="2300" height="1360" fill="#f1f4f9"/>
+<text x="60" y="62" class="t1">BookSwipe Sustentável</text>
+<text x="60" y="94" class="t2">Diagrama Entidade-Relacionamento · banco <tspan font-weight="700">bookswipe</tspan> (MySQL) · 11 tabelas</text>
+<rect x="1500" y="52" width="16" height="16" rx="4" fill="#7c3aed"/>
+<text x="1524" y="65" class="lg">Pessoas</text>
+<rect x="1690" y="52" width="16" height="16" rx="4" fill="#2563eb"/>
+<text x="1714" y="65" class="lg">Catálogo</text>
+<rect x="1880" y="52" width="16" height="16" rx="4" fill="#db2777"/>
+<text x="1904" y="65" class="lg">Rede social</text>
+<rect x="2070" y="52" width="16" height="16" rx="4" fill="#059669"/>
+<text x="2094" y="65" class="lg">Troca sustentável</text>
+<path d="M400,588 L520,588" class="ln" fill="none"/>
+<line x1="412.0" y1="597.0" x2="412.0" y2="579.0" class="ln"/><line x1="420.0" y1="597.0" x2="420.0" y2="579.0" class="ln"/>
+<line x1="502.0" y1="588.0" x2="520.0" y2="598.0" class="ln"/><line x1="502.0" y1="588.0" x2="520.0" y2="588.0" class="ln"/><line x1="502.0" y1="588.0" x2="520.0" y2="578.0" class="ln"/><circle cx="493.0" cy="588.0" r="6" fill="#fff" class="ln"/>
+<path d="M860,650 L980,650" class="ln" fill="none"/>
+<line x1="872.0" y1="659.0" x2="872.0" y2="641.0" class="ln"/><line x1="880.0" y1="659.0" x2="880.0" y2="641.0" class="ln"/>
+<line x1="962.0" y1="650.0" x2="980.0" y2="660.0" class="ln"/><line x1="962.0" y1="650.0" x2="980.0" y2="650.0" class="ln"/><line x1="962.0" y1="650.0" x2="980.0" y2="640.0" class="ln"/><circle cx="953.0" cy="650.0" r="6" fill="#fff" class="ln"/>
+<path d="M1150,530 L1150,426" class="ln" fill="none"/>
+<line x1="1159.0" y1="518.0" x2="1141.0" y2="518.0" class="ln"/><line x1="1159.0" y1="510.0" x2="1141.0" y2="510.0" class="ln"/>
+<line x1="1150.0" y1="444.0" x2="1160.0" y2="426.0" class="ln"/><line x1="1150.0" y1="444.0" x2="1150.0" y2="426.0" class="ln"/><line x1="1150.0" y1="444.0" x2="1140.0" y2="426.0" class="ln"/><circle cx="1150.0" cy="453.0" r="6" fill="#fff" class="ln"/>
+<path d="M1150,826 L1150,930" class="ln" fill="none"/>
+<line x1="1141.0" y1="838.0" x2="1159.0" y2="838.0" class="ln"/><line x1="1141.0" y1="846.0" x2="1159.0" y2="846.0" class="ln"/>
+<line x1="1150.0" y1="912.0" x2="1140.0" y2="930.0" class="ln"/><line x1="1150.0" y1="912.0" x2="1150.0" y2="930.0" class="ln"/><line x1="1150.0" y1="912.0" x2="1160.0" y2="930.0" class="ln"/><circle cx="1150.0" cy="903.0" r="6" fill="#fff" class="ln"/>
+<path d="M1440,680 L1320,680" class="ln" fill="none"/>
+<line x1="1428.0" y1="671.0" x2="1428.0" y2="689.0" class="ln"/><line x1="1420.0" y1="671.0" x2="1420.0" y2="689.0" class="ln"/>
+<line x1="1338.0" y1="680.0" x2="1320.0" y2="670.0" class="ln"/><line x1="1338.0" y1="680.0" x2="1320.0" y2="680.0" class="ln"/><line x1="1338.0" y1="680.0" x2="1320.0" y2="690.0" class="ln"/><circle cx="1347.0" cy="680.0" r="6" fill="#fff" class="ln"/>
+<path d="M1440,570 L1380,570 L1380,323 L1320,323" class="ln" fill="none"/>
+<line x1="1428.0" y1="561.0" x2="1428.0" y2="579.0" class="ln"/><line x1="1420.0" y1="561.0" x2="1420.0" y2="579.0" class="ln"/>
+<line x1="1338.0" y1="323.0" x2="1320.0" y2="313.0" class="ln"/><line x1="1338.0" y1="323.0" x2="1320.0" y2="323.0" class="ln"/><line x1="1338.0" y1="323.0" x2="1320.0" y2="333.0" class="ln"/><circle cx="1347.0" cy="323.0" r="6" fill="#fff" class="ln"/>
+<path d="M1440,760 L1380,760 L1380,1033 L1320,1033" class="ln" fill="none"/>
+<line x1="1428.0" y1="751.0" x2="1428.0" y2="769.0" class="ln"/><line x1="1420.0" y1="751.0" x2="1420.0" y2="769.0" class="ln"/>
+<line x1="1338.0" y1="1033.0" x2="1320.0" y2="1023.0" class="ln"/><line x1="1338.0" y1="1033.0" x2="1320.0" y2="1033.0" class="ln"/><line x1="1338.0" y1="1033.0" x2="1320.0" y2="1043.0" class="ln"/><circle cx="1347.0" cy="1033.0" r="6" fill="#fff" class="ln"/>
+<path d="M1610,530 L1610,396" class="ln" fill="none"/>
+<line x1="1619.0" y1="518.0" x2="1601.0" y2="518.0" class="ln"/><line x1="1619.0" y1="510.0" x2="1601.0" y2="510.0" class="ln"/>
+<line x1="1610.0" y1="414.0" x2="1620.0" y2="396.0" class="ln"/><line x1="1610.0" y1="414.0" x2="1610.0" y2="396.0" class="ln"/><line x1="1610.0" y1="414.0" x2="1600.0" y2="396.0" class="ln"/><circle cx="1610.0" cy="423.0" r="6" fill="#fff" class="ln"/>
+<path d="M690,530 L690,170 L1560,170 L1560,220" class="ln" fill="none"/>
+<line x1="699.0" y1="518.0" x2="681.0" y2="518.0" class="ln"/><line x1="699.0" y1="510.0" x2="681.0" y2="510.0" class="ln"/>
+<line x1="1560.0" y1="202.0" x2="1550.0" y2="220.0" class="ln"/><line x1="1560.0" y1="202.0" x2="1560.0" y2="220.0" class="ln"/><line x1="1560.0" y1="202.0" x2="1570.0" y2="220.0" class="ln"/><circle cx="1560.0" cy="193.0" r="6" fill="#fff" class="ln"/>
+<path d="M1610,796 L1610,930" class="ln" fill="none"/>
+<line x1="1601.0" y1="808.0" x2="1619.0" y2="808.0" class="ln"/><line x1="1601.0" y1="816.0" x2="1619.0" y2="816.0" class="ln"/>
+<line x1="1610.0" y1="912.0" x2="1600.0" y2="930.0" class="ln"/><line x1="1610.0" y1="912.0" x2="1610.0" y2="930.0" class="ln"/><line x1="1610.0" y1="912.0" x2="1620.0" y2="930.0" class="ln"/><circle cx="1610.0" cy="903.0" r="6" fill="#fff" class="ln"/>
+<path d="M690,796 L690,1210 L1560,1210 L1560,1136" class="ln" fill="none"/>
+<line x1="681.0" y1="808.0" x2="699.0" y2="808.0" class="ln"/><line x1="681.0" y1="816.0" x2="699.0" y2="816.0" class="ln"/>
+<line x1="1560.0" y1="1154.0" x2="1570.0" y2="1136.0" class="ln"/><line x1="1560.0" y1="1154.0" x2="1560.0" y2="1136.0" class="ln"/><line x1="1560.0" y1="1154.0" x2="1550.0" y2="1136.0" class="ln"/><circle cx="1560.0" cy="1163.0" r="6" fill="#fff" class="ln"/>
+<path d="M1780,1060 L1900,1060" class="ln" fill="none"/>
+<line x1="1792.0" y1="1069.0" x2="1792.0" y2="1051.0" class="ln"/><line x1="1800.0" y1="1069.0" x2="1800.0" y2="1051.0" class="ln"/>
+<line x1="1882.0" y1="1060.0" x2="1900.0" y2="1070.0" class="ln"/><line x1="1882.0" y1="1060.0" x2="1900.0" y2="1060.0" class="ln"/><line x1="1882.0" y1="1060.0" x2="1900.0" y2="1050.0" class="ln"/><circle cx="1873.0" cy="1060.0" r="6" fill="#fff" class="ln"/>
+<path d="M1780,760 L1840,760 L1840,990 L1900,990" class="ln" fill="none"/>
+<line x1="1792.0" y1="769.0" x2="1792.0" y2="751.0" class="ln"/><line x1="1800.0" y1="769.0" x2="1800.0" y2="751.0" class="ln"/>
+<line x1="1882.0" y1="990.0" x2="1900.0" y2="1000.0" class="ln"/><line x1="1882.0" y1="990.0" x2="1900.0" y2="990.0" class="ln"/><line x1="1882.0" y1="990.0" x2="1900.0" y2="980.0" class="ln"/><circle cx="1873.0" cy="990.0" r="6" fill="#fff" class="ln"/>
+<path d="M1780,588 L1900,588" class="ln" fill="none"/>
+<line x1="1792.0" y1="597.0" x2="1792.0" y2="579.0" class="ln"/><line x1="1800.0" y1="597.0" x2="1800.0" y2="579.0" class="ln"/>
+<line x1="1882.0" y1="588.0" x2="1900.0" y2="598.0" class="ln"/><line x1="1882.0" y1="588.0" x2="1900.0" y2="588.0" class="ln"/><line x1="1882.0" y1="588.0" x2="1900.0" y2="578.0" class="ln"/><circle cx="1873.0" cy="588.0" r="6" fill="#fff" class="ln"/>
+<path d="M230,646 L230,1265 L2270,1265 L2270,588 L2240,588" class="ln" fill="none"/>
+<line x1="221.0" y1="658.0" x2="239.0" y2="658.0" class="ln"/><line x1="221.0" y1="666.0" x2="239.0" y2="666.0" class="ln"/>
+<line x1="2258.0" y1="588.0" x2="2240.0" y2="578.0" class="ln"/><line x1="2258.0" y1="588.0" x2="2240.0" y2="588.0" class="ln"/><line x1="2258.0" y1="588.0" x2="2240.0" y2="598.0" class="ln"/><circle cx="2267.0" cy="588.0" r="6" fill="#fff" class="ln"/>
+<path d="M1700,530 L1700,470 L2070,470 L2070,396" class="ln" fill="none"/>
+<line x1="1709.0" y1="518.0" x2="1691.0" y2="518.0" class="ln"/><line x1="1709.0" y1="510.0" x2="1691.0" y2="510.0" class="ln"/>
+<line x1="2070.0" y1="414.0" x2="2080.0" y2="396.0" class="ln"/><line x1="2070.0" y1="414.0" x2="2070.0" y2="396.0" class="ln"/><line x1="2070.0" y1="414.0" x2="2060.0" y2="396.0" class="ln"/><circle cx="2070.0" cy="423.0" r="6" fill="#fff" class="ln"/>
+<rect x="60" y="530" width="340" height="116" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M60,542 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#2563eb"/>
+<text x="78" y="560" class="th">genero</text>
+<rect x="76" y="583" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="91" y="596" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="150" y="596" class="col" font-weight="600">id</text>
+<text x="384" y="596" class="ty" text-anchor="end">INT</text>
+<rect x="61" y="606" width="338" height="30" fill="#f7f8fb"/>
+<rect x="76" y="613" width="30" height="17" rx="4" fill="#eef2f6" stroke="#64748b"/>
+<text x="91" y="626" class="bd" fill="#64748b" text-anchor="middle">UK</text>
+<text x="150" y="626" class="col">nome</text>
+<text x="384" y="626" class="ty" text-anchor="end">VARCHAR(50)</text>
+<rect x="520" y="530" width="340" height="266" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M520,542 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#2563eb"/>
+<text x="538" y="560" class="th">livro</text>
+<rect x="536" y="583" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="551" y="596" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="610" y="596" class="col" font-weight="600">id</text>
+<text x="844" y="596" class="ty" text-anchor="end">INT</text>
+<rect x="521" y="606" width="338" height="30" fill="#f7f8fb"/>
+<text x="610" y="626" class="col">titulo</text>
+<text x="844" y="626" class="ty" text-anchor="end">VARCHAR(200)</text>
+<text x="610" y="656" class="col">autor</text>
+<text x="844" y="656" class="ty" text-anchor="end">VARCHAR(150)</text>
+<rect x="521" y="666" width="338" height="30" fill="#f7f8fb"/>
+<text x="610" y="686" class="col">isbn</text>
+<text x="844" y="686" class="ty" text-anchor="end">VARCHAR(20)</text>
+<text x="610" y="716" class="col">sinopse</text>
+<text x="844" y="716" class="ty" text-anchor="end">TEXT</text>
+<rect x="521" y="726" width="338" height="30" fill="#f7f8fb"/>
+<text x="610" y="746" class="col">capa_url</text>
+<text x="844" y="746" class="ty" text-anchor="end">VARCHAR(500)</text>
+<rect x="536" y="763" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="551" y="776" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="610" y="776" class="col">genero_id</text>
+<text x="844" y="776" class="ty" text-anchor="end">INT</text>
+<rect x="980" y="220" width="340" height="206" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M980,232 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#db2777"/>
+<text x="998" y="250" class="th">curtida</text>
+<rect x="996" y="273" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1011" y="286" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="1070" y="286" class="col" font-weight="600">id</text>
+<text x="1304" y="286" class="ty" text-anchor="end">INT</text>
+<rect x="981" y="296" width="338" height="30" fill="#f7f8fb"/>
+<rect x="996" y="303" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1011" y="316" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1070" y="316" class="col">usuario_id</text>
+<text x="1304" y="316" class="ty" text-anchor="end">INT</text>
+<rect x="996" y="333" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1011" y="346" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1070" y="346" class="col">experiencia_id</text>
+<text x="1304" y="346" class="ty" text-anchor="end">INT</text>
+<rect x="981" y="356" width="338" height="30" fill="#f7f8fb"/>
+<text x="1070" y="376" class="col">tipo</text>
+<text x="1304" y="376" class="ty" text-anchor="end">VARCHAR(10)</text>
+<text x="1070" y="406" class="col">data_curtida</text>
+<text x="1304" y="406" class="ty" text-anchor="end">DATETIME</text>
+<rect x="980" y="530" width="340" height="296" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M980,542 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#db2777"/>
+<text x="998" y="560" class="th">experiencia</text>
+<rect x="996" y="583" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1011" y="596" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="1070" y="596" class="col" font-weight="600">id</text>
+<text x="1304" y="596" class="ty" text-anchor="end">INT</text>
+<rect x="981" y="606" width="338" height="30" fill="#f7f8fb"/>
+<rect x="996" y="613" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1011" y="626" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1070" y="626" class="col">usuario_id</text>
+<text x="1304" y="626" class="ty" text-anchor="end">INT</text>
+<rect x="996" y="643" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1011" y="656" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1070" y="656" class="col">livro_id</text>
+<text x="1304" y="656" class="ty" text-anchor="end">INT</text>
+<rect x="981" y="666" width="338" height="30" fill="#f7f8fb"/>
+<text x="1070" y="686" class="col">nota</text>
+<text x="1304" y="686" class="ty" text-anchor="end">INT (0 a 5)</text>
+<text x="1070" y="716" class="col">sentimento</text>
+<text x="1304" y="716" class="ty" text-anchor="end">VARCHAR(50)</text>
+<rect x="981" y="726" width="338" height="30" fill="#f7f8fb"/>
+<text x="1070" y="746" class="col">texto</text>
+<text x="1304" y="746" class="ty" text-anchor="end">TEXT</text>
+<text x="1070" y="776" class="col">trecho_favorito</text>
+<text x="1304" y="776" class="ty" text-anchor="end">VARCHAR(500)</text>
+<rect x="981" y="786" width="338" height="30" fill="#f7f8fb"/>
+<text x="1070" y="806" class="col">data_post</text>
+<text x="1304" y="806" class="ty" text-anchor="end">DATETIME</text>
+<rect x="980" y="930" width="340" height="206" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M980,942 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#db2777"/>
+<text x="998" y="960" class="th">comentario</text>
+<rect x="996" y="983" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1011" y="996" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="1070" y="996" class="col" font-weight="600">id</text>
+<text x="1304" y="996" class="ty" text-anchor="end">INT</text>
+<rect x="981" y="1006" width="338" height="30" fill="#f7f8fb"/>
+<rect x="996" y="1013" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1011" y="1026" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1070" y="1026" class="col">usuario_id</text>
+<text x="1304" y="1026" class="ty" text-anchor="end">INT</text>
+<rect x="996" y="1043" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1011" y="1056" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1070" y="1056" class="col">experiencia_id</text>
+<text x="1304" y="1056" class="ty" text-anchor="end">INT</text>
+<rect x="981" y="1066" width="338" height="30" fill="#f7f8fb"/>
+<text x="1070" y="1086" class="col">texto</text>
+<text x="1304" y="1086" class="ty" text-anchor="end">VARCHAR(1000)</text>
+<text x="1070" y="1116" class="col">data_comentario</text>
+<text x="1304" y="1116" class="ty" text-anchor="end">DATETIME</text>
+<rect x="1440" y="220" width="340" height="176" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M1440,232 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#7c3aed"/>
+<text x="1458" y="250" class="th">estante</text>
+<rect x="1456" y="273" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1471" y="286" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<rect x="1490" y="273" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1505" y="286" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1530" y="286" class="col" font-weight="600">usuario_id</text>
+<text x="1764" y="286" class="ty" text-anchor="end">INT</text>
+<rect x="1441" y="296" width="338" height="30" fill="#f7f8fb"/>
+<rect x="1456" y="303" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1471" y="316" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<rect x="1490" y="303" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1505" y="316" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1530" y="316" class="col" font-weight="600">livro_id</text>
+<text x="1764" y="316" class="ty" text-anchor="end">INT</text>
+<text x="1530" y="346" class="col">status</text>
+<text x="1764" y="346" class="ty" text-anchor="end">VARCHAR(20)</text>
+<rect x="1441" y="356" width="338" height="30" fill="#f7f8fb"/>
+<text x="1530" y="376" class="col">favorito</text>
+<text x="1764" y="376" class="ty" text-anchor="end">BOOLEAN</text>
+<rect x="1440" y="530" width="340" height="266" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M1440,542 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#7c3aed"/>
+<text x="1458" y="560" class="th">usuario</text>
+<rect x="1456" y="583" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1471" y="596" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="1530" y="596" class="col" font-weight="600">id</text>
+<text x="1764" y="596" class="ty" text-anchor="end">INT</text>
+<rect x="1441" y="606" width="338" height="30" fill="#f7f8fb"/>
+<text x="1530" y="626" class="col">nome</text>
+<text x="1764" y="626" class="ty" text-anchor="end">VARCHAR(100)</text>
+<rect x="1456" y="643" width="30" height="17" rx="4" fill="#eef2f6" stroke="#64748b"/>
+<text x="1471" y="656" class="bd" fill="#64748b" text-anchor="middle">UK</text>
+<text x="1530" y="656" class="col">email</text>
+<text x="1764" y="656" class="ty" text-anchor="end">VARCHAR(100)</text>
+<rect x="1441" y="666" width="338" height="30" fill="#f7f8fb"/>
+<text x="1530" y="686" class="col">senha</text>
+<text x="1764" y="686" class="ty" text-anchor="end">VARCHAR(100)</text>
+<text x="1530" y="716" class="col">curso</text>
+<text x="1764" y="716" class="ty" text-anchor="end">VARCHAR(100)</text>
+<rect x="1441" y="726" width="338" height="30" fill="#f7f8fb"/>
+<text x="1530" y="746" class="col">bairro</text>
+<text x="1764" y="746" class="ty" text-anchor="end">VARCHAR(100)</text>
+<text x="1530" y="776" class="col">data_cadastro</text>
+<text x="1764" y="776" class="ty" text-anchor="end">DATETIME</text>
+<rect x="1440" y="930" width="340" height="206" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M1440,942 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#059669"/>
+<text x="1458" y="960" class="th">livro_disponivel</text>
+<rect x="1456" y="983" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1471" y="996" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="1530" y="996" class="col" font-weight="600">id</text>
+<text x="1764" y="996" class="ty" text-anchor="end">INT</text>
+<rect x="1441" y="1006" width="338" height="30" fill="#f7f8fb"/>
+<rect x="1456" y="1013" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1471" y="1026" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1530" y="1026" class="col">usuario_id</text>
+<text x="1764" y="1026" class="ty" text-anchor="end">INT</text>
+<rect x="1456" y="1043" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1471" y="1056" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1530" y="1056" class="col">livro_id</text>
+<text x="1764" y="1056" class="ty" text-anchor="end">INT</text>
+<rect x="1441" y="1066" width="338" height="30" fill="#f7f8fb"/>
+<text x="1530" y="1086" class="col">condicao</text>
+<text x="1764" y="1086" class="ty" text-anchor="end">VARCHAR(20)</text>
+<text x="1530" y="1116" class="col">status</text>
+<text x="1764" y="1116" class="ty" text-anchor="end">VARCHAR(20)</text>
+<rect x="1900" y="530" width="340" height="116" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M1900,542 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#7c3aed"/>
+<text x="1918" y="560" class="th">usuario_genero</text>
+<rect x="1916" y="583" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1931" y="596" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<rect x="1950" y="583" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1965" y="596" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1990" y="596" class="col" font-weight="600">usuario_id</text>
+<text x="2224" y="596" class="ty" text-anchor="end">INT</text>
+<rect x="1901" y="606" width="338" height="30" fill="#f7f8fb"/>
+<rect x="1916" y="613" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1931" y="626" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<rect x="1950" y="613" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1965" y="626" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1990" y="626" class="col" font-weight="600">genero_id</text>
+<text x="2224" y="626" class="ty" text-anchor="end">INT</text>
+<rect x="1900" y="220" width="340" height="176" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M1900,232 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#7c3aed"/>
+<text x="1918" y="250" class="th">sessao</text>
+<rect x="1916" y="273" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1931" y="286" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="1990" y="286" class="col" font-weight="600">token_hash</text>
+<text x="2224" y="286" class="ty" text-anchor="end">CHAR(64)</text>
+<rect x="1901" y="296" width="338" height="30" fill="#f7f8fb"/>
+<rect x="1916" y="303" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1931" y="316" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1990" y="316" class="col">usuario_id</text>
+<text x="2224" y="316" class="ty" text-anchor="end">INT</text>
+<text x="1990" y="346" class="col">criada_em</text>
+<text x="2224" y="346" class="ty" text-anchor="end">DATETIME</text>
+<rect x="1901" y="356" width="338" height="30" fill="#f7f8fb"/>
+<text x="1990" y="376" class="col">expira_em</text>
+<text x="2224" y="376" class="ty" text-anchor="end">DATETIME</text>
+<rect x="1900" y="930" width="340" height="236" rx="12" fill="#ffffff" stroke="#d6dbe3" filter="url(#sombra)"/>
+<path d="M1900,942 a12,12 0 0 1 12,-12 h316 a12,12 0 0 1 12,12 v34 h-340 z" fill="#059669"/>
+<text x="1918" y="960" class="th">solicitacao_troca</text>
+<rect x="1916" y="983" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="1931" y="996" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="1990" y="996" class="col" font-weight="600">id</text>
+<text x="2224" y="996" class="ty" text-anchor="end">INT</text>
+<rect x="1901" y="1006" width="338" height="30" fill="#f7f8fb"/>
+<rect x="1916" y="1013" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1931" y="1026" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1990" y="1026" class="col">livro_disponivel_id</text>
+<text x="2224" y="1026" class="ty" text-anchor="end">INT</text>
+<rect x="1916" y="1043" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="1931" y="1056" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="1990" y="1056" class="col">solicitante_id</text>
+<text x="2224" y="1056" class="ty" text-anchor="end">INT</text>
+<rect x="1901" y="1066" width="338" height="30" fill="#f7f8fb"/>
+<text x="1990" y="1086" class="col">status</text>
+<text x="2224" y="1086" class="ty" text-anchor="end">VARCHAR(20)</text>
+<text x="1990" y="1116" class="col">data_solicitacao</text>
+<text x="2224" y="1116" class="ty" text-anchor="end">DATETIME</text>
+<rect x="1901" y="1126" width="338" height="30" fill="#f7f8fb"/>
+<text x="1990" y="1146" class="col">data_conclusao</text>
+<text x="2224" y="1146" class="ty" text-anchor="end">DATETIME</text>
+<rect x="413.5" y="551" width="93.0" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="460" y="566.5" class="lb" text-anchor="middle">classifica</text>
+<rect x="862.55" y="613" width="114.89999999999999" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="920" y="628.5" class="lb" text-anchor="middle">é avaliado em</text>
+<rect x="1118.1" y="467" width="63.8" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1150" y="482.5" class="lb" text-anchor="middle">recebe</text>
+<rect x="1118.1" y="867" width="63.8" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1150" y="882.5" class="lb" text-anchor="middle">recebe</text>
+<rect x="1344.45" y="643" width="71.1" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1380" y="658.5" class="lb" text-anchor="middle">escreve</text>
+<rect x="1362.7" y="435" width="34.6" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1380" y="450.5" class="lb" text-anchor="middle">dá</text>
+<rect x="1359.05" y="885" width="41.9" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1380" y="900.5" class="lb" text-anchor="middle">faz</text>
+<rect x="1570.8" y="452" width="78.4" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1610" y="467.5" class="lb" text-anchor="middle">organiza</text>
+<rect x="1060.25" y="159" width="129.5" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1125" y="174.5" class="lb" text-anchor="middle">está na estante</text>
+<rect x="1574.45" y="852" width="71.1" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1610" y="867.5" class="lb" text-anchor="middle">oferece</text>
+<rect x="1067.55" y="1199" width="114.89999999999999" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1125" y="1214.5" class="lb" text-anchor="middle">é exemplar de</text>
+<rect x="1808.1" y="1023" width="63.8" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1840" y="1038.5" class="lb" text-anchor="middle">recebe</text>
+<rect x="1800.8" y="864" width="78.4" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1840" y="879.5" class="lb" text-anchor="middle">solicita</text>
+<rect x="1804.45" y="551" width="71.1" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1840" y="566.5" class="lb" text-anchor="middle">prefere</text>
+<rect x="1235.25" y="1254" width="129.5" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1300" y="1269.5" class="lb" text-anchor="middle">é preferido por</text>
+<rect x="1860.4" y="459" width="49.2" height="22" rx="11" fill="#ffffff" stroke="#cbd2dc"/>
+<text x="1885" y="474.5" class="lb" text-anchor="middle">abre</text>
+<text x="60" y="1325" class="lg" font-weight="600">Notação:</text>
+<line x1="150" y1="1320" x2="200" y2="1320" class="ln"/><line x1="162" y1="1329" x2="162" y2="1311" class="ln"/><line x1="170" y1="1329" x2="170" y2="1311" class="ln"/>
+<text x="212" y="1325" class="lg">exatamente 1</text>
+<line x1="340" y1="1320" x2="390" y2="1320" class="ln"/><line x1="372" y1="1320" x2="390" y2="1330" class="ln"/><line x1="372" y1="1320" x2="390" y2="1320" class="ln"/><line x1="372" y1="1320" x2="390" y2="1310" class="ln"/><circle cx="363" cy="1320" r="6" fill="#fff" class="ln"/>
+<text x="402" y="1325" class="lg">0 ou muitos (1:N)</text>
+<rect x="600" y="1311" width="30" height="17" rx="4" fill="#fff7e6" stroke="#d97706"/>
+<text x="615" y="1324" class="bd" fill="#d97706" text-anchor="middle">PK</text>
+<text x="638" y="1325" class="lg">chave primária</text>
+<rect x="800" y="1311" width="30" height="17" rx="4" fill="#e8f0ff" stroke="#2563eb"/>
+<text x="815" y="1324" class="bd" fill="#2563eb" text-anchor="middle">FK</text>
+<text x="838" y="1325" class="lg">chave estrangeira</text>
+<rect x="1000" y="1311" width="30" height="17" rx="4" fill="#eef2f6" stroke="#64748b"/>
+<text x="1015" y="1324" class="bd" fill="#64748b" text-anchor="middle">UK</text>
+<text x="1038" y="1325" class="lg">valor único</text>
+<text x="1220" y="1325" class="lg">PK + FK = chave composta (tabelas N:N)</text>
+</svg>

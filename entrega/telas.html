@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Telas Reais e Landing Page – BookSwipe</title>
+<style>
+  @page { size: A4; margin: 16mm 16mm 18mm; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #1f2a24; font-size: 11pt; line-height: 1.5; margin: 0; }
+  h1, h2, h3 { color: #1B3A2F; margin: 0 0 6px; }
+  h2 { font-size: 17pt; border-bottom: 3px solid #4CAF7D; padding-bottom: 4px; margin-top: 4px; }
+  h3 { font-size: 13pt; margin-top: 14px; }
+  p, li { text-align: justify; hyphens: auto; }
+  .quebra { break-before: page; }
+  figure { margin: 8px 0 4px; break-inside: avoid; text-align: center; }
+  figure img { max-width: 100%; max-height: 118mm; border: 1px solid #d9d4c7; border-radius: 4px; }
+  figure.cel img { max-height: 120mm; }
+  figcaption { font-size: 9.5pt; color: #444; margin-top: 4px; text-align: center; }
+  figcaption b { color: #1B3A2F; }
+  .tela { break-inside: avoid; margin-bottom: 10px; }
+  .tela p { margin: 4px 0; }
+  .rotulo { font-weight: bold; color: #E67E3E; }
+  .lado { display: flex; gap: 10px; justify-content: center; }
+  .lado figure { flex: 1; }
+  table { width: 100%; border-collapse: collapse; font-size: 10pt; margin: 6px 0; }
+  th, td { border: 1px solid #cfd8d2; padding: 5px 7px; text-align: left; vertical-align: top; }
+  th { background: #1B3A2F; color: #fff; }
+  tr:nth-child(even) td { background: #F7F5F0; }
+  .fluxo { font-family: Arial; background: #F7F5F0; border-left: 4px solid #4CAF7D; padding: 8px 12px; font-size: 10.5pt; }
+
+  /* capa */
+  .capa { height: 255mm; display: flex; flex-direction: column; justify-content: space-between; text-align: center; }
+  .capa .topo { color: #1B3A2F; font-size: 12pt; letter-spacing: 1px; }
+  .capa h1 { font-size: 34pt; margin-top: 50mm; }
+  .capa h1 span { color: #4CAF7D; }
+  .capa .sub { font-size: 15pt; color: #444; margin-top: 6px; }
+  .capa .entrega { display: inline-block; background: #1B3A2F; color: #fff; padding: 8px 18px; border-radius: 20px; font-size: 12pt; margin-top: 14mm; }
+  .capa .equipe { font-size: 11.5pt; text-align: left; margin: 0 auto; }
+  .capa .equipe td { border: none; padding: 2px 10px; background: none !important; }
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<section class="capa">
+  <div class="topo">UPX 2 – DESENVOLVIMENTO DE PROJETO · ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</div>
+  <div>
+    <h1>📚 Book<span>Swipe</span> Sustentável</h1>
+    <div class="sub">Rede social de experiências de leitura e troca de livros físicos entre estudantes</div>
+    <div class="entrega">Entrega: Telas Reais do Sistema e Landing Page</div>
+  </div>
+  <div>
+    <table class="equipe">
+      <tr><td><b>Código do grupo:</b></td><td>Grupo SO NÓS</td></tr>
+      <tr><td><b>Integrantes:</b></td><td>Lucas Amado – RA 263281<br>Yan Sumi – RA 263423<br>Nicolas Leon – RA 263164<br>Matheus Freitas – RA 263627</td></tr>
+      <tr><td><b>Professor orientador:</b></td><td>Prof. Eliney Sabino</td></tr>
+    </table>
+    <p style="text-align:center;margin-top:14mm">Sorocaba – SP · Outubro de 2026</p>
+  </div>
+</section>
+
+<!-- 1. APRESENTAÇÃO -->
+<section class="quebra">
+  <h2>1. Apresentação</h2>
+  <p>Este documento apresenta as <b>telas reais</b> do BookSwipe Sustentável, já implementadas e funcionando, e a sua <b>Landing Page</b>. Não usamos protótipo no Figma: todas as imagens são capturas do sistema rodando, com o site (HTML, CSS e JavaScript) consumindo a API própria em Java (Javalin), que lê e grava os dados no banco MySQL. Os dados que aparecem nas telas são dados de teste cadastrados no banco.</p>
+  <p>O BookSwipe resolve dois problemas observados entre colegas da faculdade: livros que, depois de lidos, ficam parados na estante, e a falta de um espaço para descobrir leituras e conversar sobre elas. A plataforma junta uma <b>rede social de experiências de leitura</b> (com curtidas, comentários e “match” por afinidade literária) e um <b>marketplace de troca de livros físicos</b>, medindo o impacto em indicadores de reuso (ODS 4 – Educação de Qualidade e ODS 12 – Consumo e Produção Responsáveis).</p>
+
+  <h3>1.1 Identidade visual</h3>
+  <p>A paleta segue o protótipo inicial do grupo: fundo creme <b>#F7F5F0</b> (lembra papel de livro), verde-escuro <b>#1B3A2F</b> para títulos e destaques, verde <b>#4CAF7D</b> para ações positivas e sustentabilidade, e laranja <b>#E67E3E</b> para chamadas principais (como “Publicar” e “Começar agora”). A fonte da interface é a Poppins. Todas as telas têm o mesmo menu lateral, para o usuário saber sempre onde está.</p>
+
+  <h3>1.2 Mapa das telas e fluxo de navegação</h3>
+  <div class="fluxo">
+    <b>Visitante:</b> Landing Page → Entrar (Login) ou Começar agora (Cadastro em 2 etapas: dados → gêneros favoritos) → Início<br>
+    <b>Usuário logado (menu lateral):</b> Início · Descobrir · Minha estante · Matches · Trocar livros · Meu impacto · Perfil · botão Publicar<br>
+    <b>Caminho social:</b> Descobrir (curtir/pular) → Comentários → Página do livro → Publicar experiência → aparece no feed dos colegas → Matches<br>
+    <b>Caminho da troca:</b> Trocar livros → Ver livro → Solicitar troca → dono aceita em “Pedidos recebidos” → troca concluída → conta em Meu impacto
+  </div>
+
+  <table>
+    <tr><th style="width:24%">Tela</th><th>Funcionalidade principal</th><th style="width:26%">Necessidade atendida</th></tr>
+    <tr><td>Landing Page</td><td>Apresenta a proposta, “Como funciona” e o número real de livros reutilizados</td><td>Atrair e explicar o projeto</td></tr>
+    <tr><td>Login / Cadastro</td><td>Acesso seguro (senha com hash e token de sessão) e escolha de gêneros</td><td>Identificar o aluno</td></tr>
+    <tr><td>Início</td><td>Resumo pessoal, livros em alta, sugestão e “continue lendo”</td><td>Ponto de partida rápido</td></tr>
+    <tr><td>Descobrir</td><td>Cards de experiências no estilo “swipe”</td><td>Descobrir o que ler</td></tr>
+    <tr><td>Comentários</td><td>Conversa sobre uma experiência</td><td>Interação social</td></tr>
+    <tr><td>Página do livro</td><td>Sinopse, nota média e experiências do livro</td><td>Decidir a próxima leitura</td></tr>
+    <tr><td>Publicar</td><td>Nota, sentimento, trecho favorito e resenha; busca na internet</td><td>Compartilhar a experiência</td></tr>
+    <tr><td>Minha estante</td><td>Lendo, lidos, quero ler e favoritos</td><td>Organizar as leituras</td></tr>
+    <tr><td>Matches</td><td>% de afinidade com outros leitores</td><td>Conectar pessoas</td></tr>
+    <tr><td>Trocar livros</td><td>Marketplace, pedidos enviados e recebidos</td><td>Reuso de livros físicos</td></tr>
+    <tr><td>Meu impacto</td><td>Indicadores de reuso e engajamento</td><td>Medir a sustentabilidade</td></tr>
+    <tr><td>Perfil</td><td>Dados públicos, gêneros e experiências</td><td>Identidade do leitor</td></tr>
+  </table>
+</section>
+
+<!-- 2. LANDING PAGE -->
+<section class="quebra">
+  <h2>2. Landing Page</h2>
+  <div class="tela">
+    <figure><img src="img/01-landing.png" style="max-height:150mm">
+      <figcaption><b>Figura 1 – Landing Page do BookSwipe (desktop).</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> é a primeira página que o visitante vê. Traz a frase principal “Livros foram feitos para circular.”, o botão <b>Começar agora</b> (leva ao cadastro) e o botão <b>Entrar</b> (leva ao login). A seção <b>Como funciona?</b> explica o uso em três passos: Descubra, Compartilhe e Troque.</p>
+    <p><span class="rotulo">Necessidade atendida:</span> o contador “livros já reutilizados pela comunidade” não é um número fixo: ele vem da API (rota pública de indicadores), então a própria Landing Page mostra o impacto sustentável real do projeto. O rodapé liga o projeto aos ODS.</p>
+  </div>
+</section>
+
+<!-- 3. ACESSO -->
+<section class="quebra">
+  <h2>3. Acesso: Login e Cadastro</h2>
+  <div class="tela">
+    <figure><img src="img/02-login.png" style="max-height:88mm">
+      <figcaption><b>Figura 2 – Tela de login.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> o aluno entra com e-mail e senha. A senha é conferida no servidor com <b>hash BCrypt</b> (nunca é guardada em texto puro) e a API devolve um <b>token de sessão</b> válido por 7 dias, que o site envia em todas as requisições. Mensagens de erro aparecem na própria tela.</p>
+  </div>
+  <div class="tela">
+    <div class="lado">
+      <figure><img src="img/03-cadastro-dados.png"><figcaption><b>Figura 3 – Cadastro, etapa 1: dados.</b> Fonte: autoria própria (2026).</figcaption></figure>
+      <figure><img src="img/04-cadastro-generos.png"><figcaption><b>Figura 4 – Cadastro, etapa 2: gêneros.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    </div>
+    <p><span class="rotulo">Funcionalidade:</span> o cadastro é dividido em duas etapas para não cansar o usuário. Na primeira, nome, e-mail, senha (mínimo de 6 caracteres), curso e bairro; na segunda, o aluno escolhe seus <b>gêneros favoritos</b>.</p>
+    <p><span class="rotulo">Necessidade atendida:</span> os gêneros escolhidos alimentam o cálculo de <b>match</b> desde o primeiro acesso, e o bairro ajuda a combinar trocas com colegas que moram perto.</p>
+  </div>
+</section>
+
+<!-- 4. INÍCIO -->
+<section class="quebra">
+  <h2>4. Início</h2>
+  <div class="tela">
+    <figure><img src="img/05-inicio.png" style="max-height:165mm">
+      <figcaption><b>Figura 5 – Tela inicial do usuário logado.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> resume a vida de leitor em três números (livros lidos, lendo agora e livros reutilizados), mostra os livros <b>Em alta</b>, uma experiência <b>Para você</b> que já pode ser curtida (♥) ou pulada (✕) ali mesmo, e o atalho <b>Continue lendo</b>. A barra de pesquisa no topo busca livro ou autor em qualquer tela.</p>
+    <p><span class="rotulo">Necessidade atendida:</span> o aluno chega e já tem o que fazer, sem precisar procurar no menu.</p>
+  </div>
+</section>
+
+<!-- 5. SOCIAL -->
+<section class="quebra">
+  <h2>5. Parte social: Descobrir, Comentários, Livro e Publicar</h2>
+  <div class="tela">
+    <div class="lado">
+      <figure><img src="img/06-descobrir.png"><figcaption><b>Figura 6 – Descobrir (card de experiência).</b> Fonte: autoria própria (2026).</figcaption></figure>
+      <figure><img src="img/07-descobrir-arrastando.png"><figcaption><b>Figura 7 – Descobrir, card sendo arrastado.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    </div>
+    <p><span class="rotulo">Funcionalidade:</span> é o coração do “Tinder de livros”. Cada card é a experiência de um colega: capa, título, autor, nota em estrelas, sentimento (ex.: “Tenso”) e o comentário. O usuário <b>arrasta o card</b> para a direita para curtir ou para a esquerda para pular (também funciona com as setas do teclado e com o dedo, no celular). O sistema só mostra experiências que o usuário ainda não avaliou e nunca mostra as dele mesmo.</p>
+    <p><span class="rotulo">Necessidade atendida:</span> resolve “não saber o que ler a seguir” com recomendações de colegas reais, de um jeito rápido e divertido.</p>
+  </div>
+  <div class="tela">
+    <figure><img src="img/08-comentarios.png" style="max-height:95mm"><figcaption><b>Figura 8 – Comentários de uma experiência.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> abre a conversa sobre uma experiência: o usuário lê o que os colegas disseram e escreve o próprio comentário.</p>
+  </div>
+</section>
+
+<section class="quebra">
+  <div class="tela">
+    <figure><img src="img/09-livro.png" style="max-height:120mm"><figcaption><b>Figura 9 – Página do livro.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> reúne tudo sobre um livro: capa, sinopse, gênero, nota média e todas as experiências publicadas sobre ele. Daqui o usuário coloca o livro na estante (quero ler, lendo, lido) ou publica a própria experiência.</p>
+  </div>
+  <div class="tela">
+    <figure><img src="img/10-publicar.png" style="max-height:110mm"><figcaption><b>Figura 10 – Publicar experiência de leitura.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> o usuário escolhe o livro, dá a nota em estrelas, marca como se sentiu (Empolgado, Emocionado, Reflexivo, Assustado…), escreve a experiência (até 500 caracteres) e, se quiser, o trecho favorito. Ao publicar, o livro vai automaticamente para a estante como <b>Lido</b>. A regra de negócio permite uma experiência por livro para cada usuário.</p>
+  </div>
+</section>
+
+<section class="quebra">
+  <div class="tela">
+    <figure><img src="img/11-busca-internet.png" style="max-height:110mm"><figcaption><b>Figura 11 – Busca de livros na internet (API Open Library).</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> se o livro ainda não existe no sistema, o usuário pesquisa pelo título e o BookSwipe busca os dados numa <b>API pública de livros</b> (Open Library; o código também está pronto para o Google Books). Com um clique, título, autor, sinopse e capa são importados.</p>
+    <p><span class="rotulo">Necessidade atendida:</span> evita digitar tudo à mão e deixa o catálogo com capas reais.</p>
+  </div>
+</section>
+
+<!-- 6. ESTANTE E MATCHES -->
+<section class="quebra">
+  <h2>6. Minha estante e Matches</h2>
+  <div class="tela">
+    <figure><img src="img/12-estante.png" style="max-height:95mm"><figcaption><b>Figura 12 – Minha estante.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> organiza os livros em quatro abas com contador: <b>Lendo</b>, <b>Lidos</b>, <b>Quero ler</b> e <b>Favoritos</b> (♥). O botão “Tirar da estante” remove o livro da lista.</p>
+  </div>
+  <div class="tela">
+    <figure><img src="img/13-matches.png" style="max-height:115mm"><figcaption><b>Figura 13 – Matches literários.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> mostra os leitores mais parecidos com o usuário, com a <b>porcentagem de afinidade</b>, os livros e os gêneros em comum. O cálculo usa o índice de Jaccard: livros em comum (lidos ou favoritos) valem 60% e gêneros favoritos em comum valem 40%. A explicação aparece no rodapé da tela, para ser transparente. Por privacidade, o match mostra só o perfil público (sem e-mail).</p>
+  </div>
+</section>
+
+<!-- 7. TROCAS -->
+<section class="quebra">
+  <h2>7. Trocar livros</h2>
+  <div class="tela">
+    <figure><img src="img/14-trocas.png" style="max-height:110mm"><figcaption><b>Figura 14 – Marketplace de livros para troca.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> lista os livros físicos que os colegas colocaram para circular, com filtro por gênero e pesquisa. Cada card mostra a <b>condição</b> do exemplar (Novo, Boa, Regular), o <b>bairro</b> e o dono. As abas separam os livros disponíveis, os <b>pedidos recebidos</b>, os <b>meus pedidos</b> e o formulário <b>Oferecer livro</b>.</p>
+    <p><span class="rotulo">Necessidade atendida:</span> dá destino útil a livros parados, sem custo: é o módulo de sustentabilidade do projeto.</p>
+  </div>
+  <div class="tela">
+    <figure><img src="img/15-troca-detalhes.png" style="max-height:95mm"><figcaption><b>Figura 15 – Detalhes do livro e confirmação da solicitação.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> antes de pedir, o usuário confere proprietário, condição e localização e confirma a solicitação.</p>
+  </div>
+</section>
+
+<section class="quebra">
+  <div class="tela">
+    <figure><img src="img/16-troca-enviada.png" style="max-height:95mm"><figcaption><b>Figura 16 – Solicitação de troca enviada.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> o sistema confirma o envio e o pedido passa a aparecer em “Meus pedidos”, com o status <b>Aguardando resposta</b>.</p>
+  </div>
+  <div class="tela">
+    <figure><img src="img/17-pedidos-recebidos.png" style="max-height:95mm"><figcaption><b>Figura 17 – Pedidos recebidos pelo dono do livro.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> o dono do livro <b>aceita</b> ou <b>recusa</b> cada pedido e, depois da entrega em mãos, marca a troca como <b>concluída</b>. As regras de negócio ficam no servidor: ninguém pede o próprio livro, não dá para pedir duas vezes o mesmo livro, e ao aceitar um pedido o livro sai do marketplace. Cada troca concluída entra nos indicadores de reuso.</p>
+  </div>
+</section>
+
+<!-- 8. IMPACTO E PERFIL -->
+<section class="quebra">
+  <h2>8. Meu impacto e Perfil</h2>
+  <div class="tela">
+    <figure><img src="img/18-impacto.png" style="max-height:120mm"><figcaption><b>Figura 18 – Painel Meu impacto (indicadores).</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> painel de indicadores calculados no banco: livros reutilizados pelo usuário e pela comunidade, <b>taxa de reuso</b> (trocados ÷ oferecidos), <b>engajamento</b> (interações por experiência), gráfico de livros reutilizados por mês, ranking de quem mais troca, gêneros mais lidos e livros em alta.</p>
+    <p><span class="rotulo">Necessidade atendida:</span> torna mensurável o objetivo sustentável do projeto e motiva o aluno a continuar trocando.</p>
+  </div>
+  <div class="tela">
+    <figure><img src="img/19-perfil.png" style="max-height:95mm"><figcaption><b>Figura 19 – Perfil do usuário.</b> Fonte: autoria própria (2026).</figcaption></figure>
+    <p><span class="rotulo">Funcionalidade:</span> mostra curso, bairro, os números do leitor (livros lidos, favoritos e reutilizados), os gêneros favoritos (que podem ser editados) e as experiências publicadas, com curtidas e comentários de cada uma.</p>
+  </div>
+</section>
+
+<!-- 9. CELULAR -->
+<section class="quebra">
+  <h2>9. Versão para celular (responsiva)</h2>
+  <p>O site se adapta a telas pequenas (teste feito com 390 px de largura, tamanho de um celular comum). O menu lateral vira um menu que abre pelo botão do topo, os cards ocupam a largura toda e o swipe do Descobrir funciona com o dedo.</p>
+  <div class="lado">
+    <figure class="cel"><img src="img/23-celular-landing.png"><figcaption><b>Figura 20 – Landing Page no celular.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+    <figure class="cel"><img src="img/20-celular-inicio.png"><figcaption><b>Figura 21 – Início no celular.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+  </div>
+  <div class="lado">
+    <figure class="cel"><img src="img/21-celular-descobrir.png"><figcaption><b>Figura 22 – Descobrir no celular.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+    <figure class="cel"><img src="img/22-celular-trocas.png"><figcaption><b>Figura 23 – Trocas no celular.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+  </div>
+</section>
+
+<!-- 10. TESTES -->
+<section class="quebra">
+  <h2>10. Testes e ajustes realizados</h2>
+  <p>Até esta entrega, as telas <b>ainda não foram testadas com usuários externos</b>. Os testes foram feitos pela própria equipe, navegando pelos fluxos completos (cadastro, publicação, swipe, comentários, solicitação e conclusão de troca) no computador e no tamanho de celular, e com testes automatizados de navegador. A partir desses testes fizemos os seguintes ajustes:</p>
+  <ul>
+    <li><b>Capas que não carregavam:</b> quando a imagem da capa falha, o site desenha automaticamente uma capa com o título e o autor, para o card não ficar vazio.</li>
+    <li><b>Swipe no celular:</b> o arrastar foi refeito para funcionar tanto com mouse quanto com o dedo, e ganhou o atalho das setas do teclado.</li>
+    <li><b>Menu no celular:</b> o menu lateral não cabia em 390 px e passou a abrir por um botão.</li>
+    <li><b>Cadastro em duas etapas:</b> separamos os dados pessoais da escolha de gêneros para o formulário não ficar longo demais.</li>
+    <li><b>Segurança:</b> as senhas passaram a ser guardadas com hash e o acesso passou a usar token de sessão, impedindo que um usuário altere dados de outro.</li>
+    <li><b>Catálogo de livros:</b> a API do Google Books bloqueou as buscas sem chave (limite de uso), então trocamos para a Open Library, mantendo o Google Books como opção.</li>
+  </ul>
+  <h3>Próximos passos</h3>
+  <p>Aplicar um teste de usabilidade com colegas da turma e com a bibliotecária (persona do projeto), coletando as impressões num formulário curto, e implementar as notificações de novos pedidos de troca.</p>
+</section>
+
+</body>
+</html>

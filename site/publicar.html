@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar experiência · BookSwipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="app">
+    <main class="conteudo" id="conteudo">
+      <div style="max-width:640px">
+        <h1>Compartilhe sua experiência</h1>
+        <p class="suave" style="margin-bottom:24px">O que esse livro despertou em você?</p>
+
+        <form class="card" id="form">
+          <!-- 1. Escolher o livro -->
+          <div class="campo" id="escolher-livro">
+            <label for="busca-livro">Qual livro?</label>
+            <input type="search" id="busca-livro" placeholder="Digite o título ou autor..." autocomplete="off">
+            <div id="opcoes-livro"></div>
+            <button type="button" class="botao-link pequeno" id="buscar-internet" style="align-self:flex-start">
+              Não achou? 🌐 Buscar na internet
+            </button>
+          </div>
+          <div id="livro-escolhido" hidden style="display:flex;gap:16px;align-items:center;margin-bottom:20px"></div>
+
+          <!-- 2. Nota -->
+          <div class="campo">
+            <label>Sua nota</label>
+            <div class="nota-estrelas" id="nota"></div>
+          </div>
+
+          <!-- 3. Sentimento -->
+          <div class="campo">
+            <label>Como você se sentiu?</label>
+            <div class="chips" id="sentimentos"></div>
+          </div>
+
+          <!-- 4. Texto -->
+          <div class="campo">
+            <label for="texto">Como foi sua experiência?</label>
+            <textarea id="texto" maxlength="500" placeholder="Escreva sobre o livro..." required></textarea>
+            <span class="dica" id="contador-texto">0/500</span>
+          </div>
+
+          <!-- 5. Trecho -->
+          <div class="campo">
+            <label for="trecho">Seu trecho favorito <span class="suave pequeno">(opcional)</span></label>
+            <input id="trecho" maxlength="500" placeholder="“...”">
+          </div>
+
+          <div class="erro-form" id="erro"></div>
+          <button class="botao botao-largo" type="submit">Publicar experiência</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/catalogo.js"></script>
+  <script src="js/publicar.js"></script>
+</body>
+</html>

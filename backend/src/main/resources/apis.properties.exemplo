@@ -1,0 +1,8 @@
+# Copie este arquivo para apis.properties
+# APIs públicas de livros
+#
+# Vazio  -> o BookSwipe usa a Open Library (gratuita, sem chave).
+# Chave  -> o BookSwipe passa a usar a Google Books.
+#   Como pegar uma chave grátis: console.cloud.google.com > criar projeto >
+#   "APIs e serviços" > ativar "Books API" > "Credenciais" > "Criar chave de API".
+google.books.chave=

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trocar livros · BookSwipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="app">
+    <main class="conteudo" id="conteudo">
+      <div class="saudacao">
+        <h1>♻️ Livros para troca</h1>
+        <p class="suave">Leu e não vai reler? Coloque para circular. Quer ler? Peça para um colega.</p>
+      </div>
+
+      <div class="abas">
+        <button class="aba ativa" data-aba="disponiveis">Disponíveis</button>
+        <button class="aba" data-aba="recebidos">Pedidos recebidos <span class="contador" id="contador-recebidos">0</span></button>
+        <button class="aba" data-aba="feitos">Meus pedidos</button>
+        <button class="aba" data-aba="oferecer">📤 Oferecer livro</button>
+      </div>
+
+      <!-- Disponíveis -->
+      <section id="aba-disponiveis">
+        <div class="campo" style="max-width:420px">
+          <input type="search" id="filtro-texto" placeholder="🔍 Pesquisar livro...">
+        </div>
+        <div class="chips" id="filtro-generos" style="margin-bottom:22px"></div>
+        <div id="disponiveis"></div>
+      </section>
+
+      <!-- Pedidos recebidos -->
+      <section id="aba-recebidos" hidden>
+        <div class="card" id="recebidos"></div>
+      </section>
+
+      <!-- Meus pedidos -->
+      <section id="aba-feitos" hidden>
+        <div class="card" id="feitos"></div>
+      </section>
+
+      <!-- Oferecer -->
+      <section id="aba-oferecer" hidden>
+        <div class="duas-colunas">
+          <form class="card" id="form-oferecer">
+            <h2 style="margin-bottom:16px">Colocar um livro para circular</h2>
+            <div class="campo">
+              <label for="busca-oferta">Qual livro?</label>
+              <input type="search" id="busca-oferta" placeholder="Digite o título..." autocomplete="off">
+              <div id="opcoes-oferta"></div>
+              <button type="button" class="botao-link pequeno" id="buscar-internet-oferta" style="align-self:flex-start">
+                Não achou? 🌐 Buscar na internet
+              </button>
+            </div>
+            <div id="oferta-escolhida" class="suave" style="margin-bottom:16px">Nenhum livro escolhido.</div>
+            <div class="campo">
+              <label for="condicao">Condição</label>
+              <select id="condicao">
+                <option value="NOVO">🟢 Novo</option>
+                <option value="BOA" selected>🟢 Boa</option>
+                <option value="REGULAR">🟡 Regular</option>
+              </select>
+            </div>
+            <div class="erro-form" id="erro-oferta"></div>
+            <button class="botao botao-largo" type="submit">♻️ Disponibilizar para troca</button>
+          </form>
+          <div class="card">
+            <h2 style="margin-bottom:12px">Meus livros oferecidos</h2>
+            <div id="meus-oferecidos"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/catalogo.js"></script>
+  <script src="js/trocas.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Copie este arquivo para db.properties e preencha com seus dados do MySQL
+db.url=jdbc:mysql://localhost:3306/bookswipe
+db.usuario=root
+db.senha=SUA_SENHA_AQUI

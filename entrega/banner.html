@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Banner BookSwipe</title>
+<style>
+  @page { size: 594mm 841mm; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 22pt; line-height: 1.25; color: #1f2a24; background: #F7F5F0;
+         width: 594mm; height: 841mm; overflow: hidden; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  p, li { text-align: justify; hyphens: auto; margin: 0 0 8pt; }
+  ul { margin: 0 0 8pt; padding-left: 28pt; }
+
+  header { background: #1B3A2F; color: #fff; padding: 14mm 18mm 12mm; display: flex; gap: 14mm; align-items: center; }
+  .marca { width: 62mm; height: 62mm; border-radius: 50%; background: #F7F5F0; flex: none; display: flex; align-items: center; justify-content: center; }
+  .marca svg { width: 40mm; height: 40mm; }
+  header .tit { flex: 1; }
+  header h1 { font-size: 32pt; margin: 0 0 4pt; letter-spacing: 1pt; }
+  header h1 span { color: #7fd3a4; }
+  header .sub { font-size: 24pt; margin: 0 0 8pt; color: #e8efe9; text-align: left; }
+  header .ident { font-size: 20pt; color: #d6e3da; line-height: 1.35; text-align: left; margin: 0; }
+  .faixa { background: #4CAF7D; color: #fff; font-size: 22pt; font-weight: bold; text-align: center; padding: 3.5mm; }
+
+  main { display: grid; grid-template-columns: 1fr 1fr; gap: 12mm; padding: 10mm 16mm 0; height: 690mm; }
+  .col { display: flex; flex-direction: column; gap: 6mm; min-height: 0; }
+  .bloco { background: #fff; border-radius: 6mm; padding: 6mm 8mm 5mm; }
+  h2 { font-size: 28pt; color: #1B3A2F; margin: 0 0 5pt; padding-bottom: 3pt; border-bottom: 2.5pt solid #4CAF7D; }
+  h2 b { color: #E67E3E; }
+  figure { margin: 4pt 0 0; text-align: center; }
+  figure img { width: 100%; border: 1pt solid #d9d4c7; border-radius: 2mm; display: block; }
+  figcaption { font-size: 20pt; line-height: 1.2; margin-top: 4pt; text-align: center; color: #333; }
+  figcaption b { color: #1B3A2F; }
+  .lado { display: flex; gap: 5mm; }
+  .lado figure { flex: 1; }
+
+  .arq { display: flex; align-items: center; justify-content: space-between; gap: 2mm; margin: 4pt 0 2pt; }
+  .arq div { background: #1B3A2F; color: #fff; font-size: 20pt; font-weight: bold; padding: 3mm 2mm; border-radius: 2mm; text-align: center; flex: 1; }
+  .arq div.l { background: #4CAF7D; }
+  .arq div.o { background: #E67E3E; }
+  .arq i { font-style: normal; color: #1B3A2F; font-size: 22pt; font-weight: bold; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 20pt; }
+  th, td { border: 1pt solid #cfd8d2; padding: 2.2mm 3mm; text-align: left; }
+  th { background: #1B3A2F; color: #fff; }
+  td.n { text-align: center; font-weight: bold; color: #2e8b57; white-space: nowrap; }
+  tr:nth-child(even) td { background: #F7F5F0; }
+  .ref p { font-size: 20pt; line-height: 1.22; text-align: left; margin-bottom: 5pt; }
+  .grow { flex: 1; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="marca">
+    <svg viewBox="0 0 64 64" fill="none" stroke="#1B3A2F" stroke-width="3.5" stroke-linejoin="round">
+      <path d="M6 14 C16 10 26 11 32 17 C38 11 48 10 58 14 V52 C48 48 38 49 32 55 C26 49 16 48 6 52 Z"/>
+      <path d="M32 17 V55"/>
+      <path d="M40 40 C40 30 47 25 53 24 C53 33 48 40 40 40 Z" fill="#4CAF7D" stroke="#4CAF7D"/>
+    </svg>
+  </div>
+  <div class="tit">
+    <h1>BOOK<span>SWIPE</span> SUSTENTÁVEL: REDE SOCIAL DE EXPERIÊNCIAS DE LEITURA E TROCA DE LIVROS FÍSICOS ENTRE ESTUDANTES</h1>
+    <p class="sub">UPX 2 – Desenvolvimento de Projeto · Análise e Desenvolvimento de Sistemas</p>
+    <p class="ident">
+      <b>Grupo SO NÓS</b> &nbsp;·&nbsp; Orientador: Prof. Eliney Sabino<br>
+      Integrantes: Lucas Amado (RA 263281) · Yan Sumi (RA 263423) · Nicolas Leon (RA 263164) · Matheus Freitas (RA 263627)
+    </p>
+  </div>
+</header>
+<div class="faixa">♻ ODS 4 – Educação de Qualidade &nbsp;·&nbsp; ODS 12 – Consumo e Produção Responsáveis</div>
+
+<main>
+  <!-- COLUNA ESQUERDA -->
+  <div class="col">
+    <section class="bloco">
+      <h2>1. Introdução</h2>
+      <p>Quem gosta de ler conhece a cena: o livro é lido uma vez e fica parado na estante, enquanto um colega da mesma faculdade gostaria de lê-lo. Além disso, não existe no campus um espaço digital para descobrir leituras e conversar sobre elas. O BookSwipe Sustentável une uma rede social de experiências de leitura, no estilo “swipe”, a um módulo de troca de livros físicos entre estudantes, dando novo uso a exemplares esquecidos.</p>
+    </section>
+
+    <section class="bloco">
+      <h2>2. Objetivos</h2>
+      <p><b>Geral:</b> desenvolver uma plataforma que conecte estudantes por meio de experiências de leitura e incentive a troca física de livros, medindo o reuso.</p>
+      <ul>
+        <li>publicar experiências com nota, sentimento, resenha e trecho favorito;</li>
+        <li>curtir, comentar e calcular o “match” por afinidade literária;</li>
+        <li>oferecer, solicitar e concluir trocas de livros;</li>
+        <li>exibir indicadores de reuso e engajamento.</li>
+      </ul>
+    </section>
+
+    <section class="bloco">
+      <h2>3. Metodologia</h2>
+      <p>O sistema foi dividido em camadas, com Programação Orientada a Objetos em Java. O banco MySQL foi modelado à mão (SQL escrito pelo grupo, 11 tabelas) e acessado via JDBC. A mesma lógica atende ao menu de console e à API REST (Javalin), consumida pelo site em HTML, CSS e JavaScript. Os dados dos livros vêm da API pública Open Library.</p>
+      <div class="arq">
+        <div class="o">Site<br>HTML/CSS/JS</div><i>→</i>
+        <div>API REST<br>Javalin</div><i>→</i>
+        <div>Services<br>regras</div><i>→</i>
+        <div>DAO<br>JDBC</div><i>→</i>
+        <div class="l">MySQL<br>11 tabelas</div>
+      </div>
+      <figcaption><b>Figura 1 – Arquitetura em camadas do sistema.</b><br>Fonte: autoria própria (2026).</figcaption>
+      <figure><img src="../banco/DER.png">
+        <figcaption><b>Figura 2 – Diagrama Entidade-Relacionamento do banco.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+    </section>
+
+    <section class="bloco grow">
+      <h2>4. Match por afinidade</h2>
+      <p>A afinidade entre dois leitores usa o índice de Jaccard (itens em comum ÷ itens no total): livros em comum (lidos ou favoritos) valem 60% e gêneros favoritos em comum valem 40%. A fórmula é simples, explicável e aparece na própria tela.</p>
+      <figure><img src="img/13-matches.png" style="height:70mm;object-fit:cover;object-position:top">
+        <figcaption><b>Figura 3 – Tela de matches literários.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+    </section>
+  </div>
+
+  <!-- COLUNA DIREITA -->
+  <div class="col">
+    <section class="bloco">
+      <h2>5. Resultados: o sistema</h2>
+      <p>O MVP está funcionando: cadastro com senha protegida por hash e token de sessão, feed de experiências com swipe, comentários, estante, matches, marketplace de trocas com regras de negócio no servidor e painel de impacto. O site também funciona no celular.</p>
+      <div class="lado">
+        <figure><img src="img/06-descobrir.png">
+          <figcaption><b>Figura 4 – Descobrir (swipe).</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+        <figure><img src="img/14-trocas.png" style="height:auto;aspect-ratio:1366/768;object-fit:cover;object-position:top">
+          <figcaption><b>Figura 5 – Livros para troca.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+      </div>
+      <div class="lado" style="margin-top:4mm">
+        <figure style="flex:2.2"><img src="img/01-landing.png" style="aspect-ratio:1366/790;object-fit:cover;object-position:top">
+          <figcaption><b>Figura 6 – Landing Page.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+        <figure style="flex:1"><img src="img/21-celular-descobrir.png" style="aspect-ratio:390/480;object-fit:cover;object-position:top">
+          <figcaption><b>Figura 7 – Versão celular.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="bloco">
+      <h2>6. Indicadores de impacto</h2>
+      <table>
+        <tr><th>Indicador (dados de teste)</th><th>Valor</th></tr>
+        <tr><td>Livros reutilizados (trocas concluídas)</td><td class="n">4</td></tr>
+        <tr><td>Taxa de reuso (trocados ÷ oferecidos)</td><td class="n">44%</td></tr>
+        <tr><td>Engajamento (interações por experiência)</td><td class="n">1,9</td></tr>
+      </table>
+      <figcaption><b>Tabela 1 – Indicadores calculados pelo sistema.</b><br>Fonte: autoria própria, banco de dados de teste (2026).</figcaption>
+      <figure><img src="img/18-impacto.png" style="aspect-ratio:1366/560;object-fit:cover;object-position:top">
+        <figcaption><b>Figura 8 – Painel “Meu impacto”.</b><br>Fonte: autoria própria (2026).</figcaption></figure>
+    </section>
+
+    <section class="bloco">
+      <h2>7. Considerações finais</h2>
+      <p>O BookSwipe mostra que é possível juntar leitura, convívio e sustentabilidade em uma ferramenta simples, construída com o conteúdo do curso. Como próximos passos estão o teste de usabilidade com alunos e com a biblioteca, notificações de pedidos de troca e a implantação para uso real no campus.</p>
+    </section>
+
+    <section class="bloco ref grow">
+      <h2>Referências</h2>
+      <p>INSTITUTO PRÓ-LIVRO. <b>Retratos da Leitura no Brasil</b>. 6. ed. São Paulo: IPL, 2024.</p>
+      <p>ONU BRASIL. <b>Objetivos de Desenvolvimento Sustentável</b>. Disponível em: https://brasil.un.org/pt-br/sdgs. Acesso em: 15 out. 2026.</p>
+      <p>INTERNET ARCHIVE. <b>Open Library APIs</b>. Disponível em: https://openlibrary.org/developers/api. Acesso em: 15 out. 2026.</p>
+      <p>JAVALIN. <b>Documentation</b>. Disponível em: https://javalin.io/documentation. Acesso em: 15 out. 2026.</p>
+    </section>
+  </div>
+</main>
+
+</body>
+</html>

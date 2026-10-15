@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matches · BookSwipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="app">
+    <main class="conteudo" id="conteudo">
+      <div class="saudacao">
+        <h1>Seus matches literários</h1>
+        <p class="suave">Pessoas que gostam dos mesmos livros que você.</p>
+      </div>
+      <div id="matches"></div>
+      <p class="suave pequeno" style="margin-top:24px">
+        Como calculamos: livros em comum (os que você leu ou curtiu) valem 60% e gêneros favoritos em comum valem 40%.
+      </p>
+    </main>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/matches.js"></script>
+</body>
+</html>

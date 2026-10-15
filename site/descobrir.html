@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descobrir · BookSwipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="app">
+    <main class="conteudo" id="conteudo">
+      <div class="descobrir">
+        <h1>Descobrir</h1>
+        <p class="suave" id="contagem">Arraste o card ou use as setas ← →</p>
+
+        <div class="pilha" id="pilha"></div>
+
+        <div id="controles">
+          <div class="botoes-swipe">
+            <button class="botao-redondo passar" id="botao-passar" title="Passar (←)">✕</button>
+            <button class="botao-redondo comentar" id="botao-comentar" title="Comentários">💬</button>
+            <button class="botao-redondo gostei" id="botao-gostei" title="Gostei (→)">♥</button>
+          </div>
+          <div class="botoes-legenda"><span>Passar</span><span>Comentar</span><span>Gostei</span></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/descobrir.js"></script>
+</body>
+</html>

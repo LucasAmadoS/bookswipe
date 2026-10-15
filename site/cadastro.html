@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar conta · BookSwipe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="tela-dividida">
+    <div class="lado-form">
+
+      <!-- Passo 1: dados -->
+      <form class="form-login passo-cadastro" id="passo-dados">
+        <a href="index.html" class="logo" id="logo"></a>
+        <h1>Crie seu perfil de leitor</h1>
+        <p class="suave">Vamos personalizar sua experiência.</p>
+
+        <div class="campo">
+          <label for="nome">Como podemos chamar você?</label>
+          <input id="nome" required autocomplete="name">
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required autocomplete="email">
+        </div>
+        <div class="campo">
+          <label for="senha">Senha (mínimo 6 caracteres)</label>
+          <input type="password" id="senha" required minlength="6" autocomplete="new-password">
+        </div>
+        <div class="campo">
+          <label for="curso">Curso</label>
+          <input id="curso" placeholder="Ex: Análise e Desenvolvimento de Sistemas">
+        </div>
+        <div class="campo">
+          <label for="bairro">Bairro <span class="suave pequeno">(aparece nas trocas)</span></label>
+          <input id="bairro" placeholder="Ex: Centro">
+        </div>
+
+        <div class="erro-form" id="erro-dados"></div>
+        <button class="botao botao-largo" type="submit">Continuar →</button>
+        <p class="suave pequeno" style="margin-top:18px;text-align:center">
+          Já tem conta? <a href="login.html" style="color:var(--verde-escuro);font-weight:600">Entrar</a>
+        </p>
+      </form>
+
+      <!-- Passo 2: gêneros -->
+      <div class="form-login passo-cadastro" id="passo-generos" hidden>
+        <h1>Quais gêneros você mais gosta?</h1>
+        <p class="suave">Escolha seus favoritos. Eles ajudam a encontrar leitores parecidos com você.</p>
+        <div class="chips" id="generos" style="margin-bottom:24px"></div>
+        <div class="erro-form" id="erro-generos"></div>
+        <button class="botao botao-largo" id="salvar-generos">Continuar →</button>
+      </div>
+
+    </div>
+    <div class="lado-arte">
+      <div style="font-size:5rem">📚</div>
+      <blockquote>Descubra livros, conheça leitores e dê uma nova vida aos livros que você já leu.</blockquote>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
